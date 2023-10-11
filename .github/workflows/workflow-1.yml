@@ -1,0 +1,13 @@
+name: My first workflow
+
+on: 
+  workflow_call:
+
+jobs:
+  call-me:
+    name: Call me by your name
+    runs-on: ubuntu-latest
+    steps:
+      - name: call me
+      - run: echo 'Hello, Hoa!!'
+  
