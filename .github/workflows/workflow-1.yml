@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: call me
-      - run: echo 'Hello, Hoa!!'
+        run: echo 'Hello, Hoa!!'
   
