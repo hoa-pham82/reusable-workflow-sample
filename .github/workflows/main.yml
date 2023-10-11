@@ -9,4 +9,4 @@ jobs:
       uses: ./.github/workflows/workflow-1.yml
   call-workflow-2:
       uses: ./.github/workflows/workflow-2.yml
-      needs: [call-workflow-1]
+      # needs: [call-workflow-1]
