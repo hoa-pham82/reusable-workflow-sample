@@ -16,13 +16,13 @@ jobs:
        - uses: actions/upload-artifact@v2
          with:
           name: result
-          path: cucumber_report.html
+          path: folder
           retention-days: 10
 
        - uses: actions/download-artifact@v3
          with:
           name: result
-          path: news/cucumber_report.html
+          path: news
 
        - name: Display structure of downloaded files
          run: |
