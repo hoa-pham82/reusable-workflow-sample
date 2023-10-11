@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: call me
-      - run: echo 'You are in the workflow 2'
+        run: echo 'You are in the workflow 2'
