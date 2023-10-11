@@ -6,6 +6,6 @@ on:
   workflow_dispatch:
 jobs:
   call-workflow-1:
-    uses: ./.github/workflows/workflow-1.yml
+      uses: ./.github/workflows/workflow-1.yml
   call-workflow-2:
-    uses: ./.github/workflows/workflow-2.yml
+      uses: ./.github/workflows/workflow-2.yml
