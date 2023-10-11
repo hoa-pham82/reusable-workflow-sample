@@ -1,0 +1,12 @@
+name: My second workflow
+
+on: 
+  workflow_call:
+
+jobs:
+  call-me-2:
+    name: You are on the second part
+    runs-on: ubuntu-latest
+    steps:
+      - name: call me
+      - run: echo 'You are in the workflow 2'
