@@ -33,12 +33,20 @@ jobs:
       #     name: result
       #     path: news
 
+      # - name: Get Allure history
+      #   if: success() || failure()
+      #   uses: actions/checkout@v3
+      #   continue-on-error: true
+      #   with:
+      #     ref: gh-pages
+      #     path: gh-pages
+
       - name: Allure Report action from marketplace - Detox
         if: success() || failure()
         uses: simple-elf/allure-report-action@master
         with:
           allure_results: allure-results-detox
-          allure_report: ${{ github.run_number }}
+          allure_report: ${{ github.run_number }}-detox
           allure_history: allure-history-detox
           keep_reports: 5
 
@@ -47,7 +55,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         with:
           allure_results: allure-results-ut
-          allure_report: ${{ github.run_number }}
+          allure_report: ${{ github.run_number }}-ut
           allure_history: allure-history-ut
           keep_reports: 5
 
@@ -56,9 +64,15 @@ jobs:
           pwd && echo '------>' && ls 
           echo '-----> you see the list of report'
 
-      # - name: Deploy report to Github Pages
-      #   uses: peaceiris/actions-gh-pages@v2
-      #   env:
-      #     PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     PUBLISH_BRANCH: gh-pages
-      #     PUBLISH_DIR: news
+      - name: Prepare github paging
+        run: |
+          mkdir public
+          cp -r allure-history-ut public
+          cp -r allure-history-detox public
+
+      - name: Deploy report to Github Pages
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: public
