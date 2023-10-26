@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698215820077' stop='1698215820231'>
+    <name>CheckBox</name>
+    <title>CheckBox</title>
+    <test-cases>
+        <test-case start='1698215820078' status='passed' stop='1698215820183'>
+            <name>renders checkbox component</name>
+            <title>renders checkbox component</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215820183' status='passed' stop='1698215820231'>
+            <name>should render icon when checked</name>
+            <title>should render icon when checked</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

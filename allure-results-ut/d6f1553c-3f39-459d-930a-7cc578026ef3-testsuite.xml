@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188174276' stop='1697188174837'>
+    <name>DriverHelpButton</name>
+    <title>DriverHelpButton</title>
+    <test-cases>
+        <test-case start='1697188174282' status='passed' stop='1697188174754'>
+            <name>renders correctly</name>
+            <title>renders correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188174757' status='passed' stop='1697188174836'>
+            <name>should navigate to the contact screen when the button is pressed</name>
+            <title>should navigate to the contact screen when the button is pressed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

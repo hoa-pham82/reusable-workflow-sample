@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188177665' stop='1697188177794'>
+    <name>Text Component</name>
+    <title>Text Component</title>
+    <test-cases>
+        <test-case start='1697188177666' status='passed' stop='1697188177787'>
+            <name>renders children correctly</name>
+            <title>renders children correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188177787' status='passed' stop='1697188177793'>
+            <name>passes props correctly</name>
+            <title>passes props correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

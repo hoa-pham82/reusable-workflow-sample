@@ -1,7 +1,8 @@
 name: My first workflow
 
-on: 
-  workflow_call:
+on:
+  # workflow_call:
+  workflow_dispatch:
 
 jobs:
   call-me:
@@ -10,4 +11,3 @@ jobs:
     steps:
       - name: call me
         run: echo 'Hello, Hoa!!'
-  

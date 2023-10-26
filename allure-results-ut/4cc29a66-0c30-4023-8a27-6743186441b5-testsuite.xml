@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188122893' stop='1697188127459'>
+    <name>AppIcon</name>
+    <title>AppIcon</title>
+    <test-cases>
+        <test-case start='1697188122895' status='passed' stop='1697188123385'>
+            <name>renders correctly</name>
+            <title>renders correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188123385' status='passed' stop='1697188124878'>
+            <name>should render the correct description text</name>
+            <title>should render the correct description text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188124878' status='passed' stop='1697188125383'>
+            <name>should zoom out to 1.5 times the original size</name>
+            <title>should zoom out to 1.5 times the original size</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188125421' status='passed' stop='1697188126256'>
+            <name>should use safe area insets for paddingTop and marginTop</name>
+            <title>should use safe area insets for paddingTop and marginTop</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188126256' status='failed' stop='1697188127458'>
+            <name>should have the correct source for the image</name>
+            <title>should have the correct source for the image</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Unable to find node on an unmounted component.</message>
+                <stack-trace>Error: Unable to find node on an unmounted component.
+                    at findCurrentFiberUsingSlowPath (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:574:13)
+                    at ReactTestInstance.findCurrentFiberUsingSlowPath [as _currentFiber] (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:18325:17)
+                    at ReactTestInstance._currentFiber (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:18397:19)
+                    at Timeout.props [as _onTimeout] (D:\insta\instatruck-driver-app\src\components\atoms\AppIcon\AppIcon.test.tsx:66:28)
+                    at listOnTimeout (node:internal/timers:569:17)
+                    at processTimers (node:internal/timers:512:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

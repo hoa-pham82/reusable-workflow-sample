@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188159342' stop='1697188162139'>
+    <name>AbilityScreen screen</name>
+    <title>AbilityScreen screen</title>
+    <test-cases>
+        <test-case start='1697188159344' status='passed' stop='1697188160677'>
+            <name>renders correctly</name>
+            <title>renders correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188160677' status='failed' stop='1697188162022'>
+            <name>handles job acceptance correctly</name>
+            <title>handles job acceptance correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
+                
+                Expected number of calls: 3
+                Received number of calls: 0</message>
+                <stack-trace>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
+                
+                Expected number of calls: 3
+                Received number of calls: 0
+                    at Object.&lt;anonymous> (D:\insta\instatruck-driver-app\src\screens\AbilityScreen\AbilityScreen.test.tsx:78:18)
+                    at Generator.next (&lt;anonymous>)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1697188162022' status='failed' stop='1697188162139'>
+            <name>handles job accept correctly</name>
+            <title>handles job accept correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>TypeError: _reactNativeDeviceInfo.default.getDeviceName is not a function</message>
+                <stack-trace>TypeError: _reactNativeDeviceInfo.default.getDeviceName is not a function
+                    at getDeviceName (D:\insta\instatruck-driver-app\src\utils\newrelic.ts:15:39)
+                    at Generator.next (&lt;anonymous>)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
+                    at _next (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7)
+                    at new Promise (&lt;anonymous>)
+                    at D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12
+                    at apply (D:\insta\instatruck-driver-app\src\utils\newrelic.ts:7:33)
+                    at D:\insta\instatruck-driver-app\src\screens\AbilityScreen\AbilityScreen.tsx:97:26
+                    at Generator.next (&lt;anonymous>)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
+                    at asyncGeneratorStep (D:\insta\instatruck-driver-app\node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

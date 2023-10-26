@@ -1,0 +1,129 @@
+{
+  "uuid": "315ad12a-e31e-49f0-b7a1-9772398d628b",
+  "historyId": "6c91fef5a325b03b1424233ff1eb0b0e:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "failed",
+  "statusDetails": {
+    "message": "TypeError: fetch failed\n    at Object.fetch (node:internal/deps/undici/undici:11576:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  "stage": "pending",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390557,
+      "name": "I am on the \"Home\" screen",
+      "stop": 1698173390824
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390824,
+      "name": "Given I am currently online",
+      "stop": 1698173390898
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "TypeError: fetch failed\n    at Object.fetch (node:internal/deps/undici/undici:11576:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+      },
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390898,
+      "name": "When New job is assigned",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "Then I should be navigated to the \"Incoming Job\" screen",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "And \"ACCEPT JOB\" button is visible",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "When I tap the \"ACCEPT JOB\" button",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "Then I should be navigated to the \"Ability\" screen",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "And \"ABILITY ACCEPT JOB\" button is visible",
+      "stop": 1698173390962
+    },
+    {
+      "status": "skipped",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173390962,
+      "name": "When I tap the \"ABILITY ACCEPT JOB\" button",
+      "stop": 1698173390962
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "host", "value": "Hoa-Pham" },
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cucumberjs" },
+    { "name": "thread", "value": "24024" },
+    { "name": "feature", "value": "Home Screen" },
+    { "name": "suite", "value": "User can be assigned new job" }
+  ],
+  "links": [],
+  "start": 1698173382777,
+  "name": "User can be assigned new job",
+  "description": "",
+  "fullName": "cucumber\\3-home-screen.feature#User can be assigned new job",
+  "testCaseId": "6c91fef5a325b03b1424233ff1eb0b0e",
+  "stop": 1698173390963
+}

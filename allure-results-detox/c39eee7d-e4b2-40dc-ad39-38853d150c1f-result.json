@@ -1,0 +1,92 @@
+{
+  "uuid": "c39eee7d-e4b2-40dc-ad39-38853d150c1f",
+  "historyId": "58947b25534f74631716424fd2542e90:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "pending",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173373051,
+      "name": "I'm currently at the \"Login\" screen",
+      "stop": 1698173375039
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173375039,
+      "name": "Given I am on the \"Login\" screen",
+      "stop": 1698173375102
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173375102,
+      "name": "When I enter an email \"test.driver.12@instatruck.com.au\"",
+      "stop": 1698173378371
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173378371,
+      "name": "And I enter a password \"123456\"",
+      "stop": 1698173379201
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173379201,
+      "name": "And I tap the \"NEXT\" button",
+      "stop": 1698173382682
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173382682,
+      "name": "Then I should be navigated to the \"Home\" screen",
+      "stop": 1698173382770
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "host", "value": "Hoa-Pham" },
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cucumberjs" },
+    { "name": "thread", "value": "24024" },
+    { "name": "feature", "value": "Login Screen" },
+    { "name": "suite", "value": "User can log in with valid credentials" }
+  ],
+  "links": [],
+  "start": 1698173367556,
+  "name": "User can log in with valid credentials",
+  "description": "",
+  "fullName": "cucumber\\2-login-screen.feature#User can log in with valid credentials",
+  "testCaseId": "58947b25534f74631716424fd2542e90",
+  "stop": 1698173382770
+}

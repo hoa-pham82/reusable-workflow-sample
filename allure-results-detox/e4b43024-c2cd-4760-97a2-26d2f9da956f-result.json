@@ -1,0 +1,62 @@
+{
+  "uuid": "e4b43024-c2cd-4760-97a2-26d2f9da956f",
+  "historyId": "29a6b59592d02066b1a19667b4419be4:d41d8cd98f00b204e9800998ecf8427e",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "pending",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173364982,
+      "name": "Given I am on the \"Sign In\" screen",
+      "stop": 1698173366462
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173366462,
+      "name": "When I tap the \"SIGN IN\" button",
+      "stop": 1698173367371
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "pending",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1698173367371,
+      "name": "Then I should be navigated to the \"Login\" screen",
+      "stop": 1698173367552
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "labels": [
+    { "name": "host", "value": "Hoa-Pham" },
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "cucumberjs" },
+    { "name": "thread", "value": "24024" },
+    { "name": "feature", "value": "Sign In Screen" },
+    {
+      "name": "suite",
+      "value": "User can sign in by tapping the \"SIGN IN\" button"
+    }
+  ],
+  "links": [],
+  "start": 1698173357100,
+  "name": "User can sign in by tapping the \"SIGN IN\" button",
+  "description": "",
+  "fullName": "cucumber\\1-sign-in-screen.feature#User can sign in by tapping the \"SIGN IN\" button",
+  "testCaseId": "29a6b59592d02066b1a19667b4419be4",
+  "stop": 1698173367554
+}

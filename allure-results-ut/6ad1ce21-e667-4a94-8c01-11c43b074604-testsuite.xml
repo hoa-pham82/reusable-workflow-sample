@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698215812410' stop='1698215812800'>
+    <name>InFoButton</name>
+    <title>InFoButton</title>
+    <test-cases>
+        <test-case start='1698215812412' status='passed' stop='1698215812766'>
+            <name>renders the button with icon and text</name>
+            <title>renders the button with icon and text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215812766' status='passed' stop='1698215812799'>
+            <name>calls the onPress callback when the button is pressed</name>
+            <title>calls the onPress callback when the button is pressed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

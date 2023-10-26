@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188167260' stop='1697188167884'>
+    <name>StarRating</name>
+    <title>StarRating</title>
+    <test-cases>
+        <test-case start='1697188167261' status='passed' stop='1697188167803'>
+            <name>renders the component correctly with default props</name>
+            <title>renders the component correctly with default props</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1697188167803' status='passed' stop='1697188167883'>
+            <name>changes the rating when clicking on stars</name>
+            <title>changes the rating when clicking on stars</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

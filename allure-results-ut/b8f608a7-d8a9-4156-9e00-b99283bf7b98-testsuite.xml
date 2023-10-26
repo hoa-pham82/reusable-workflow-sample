@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698215799204' stop='1698215801052'>
+    <name>AppIcon</name>
+    <title>AppIcon</title>
+    <test-cases>
+        <test-case start='1698215799205' status='passed' stop='1698215800091'>
+            <name>renders correctly</name>
+            <title>renders correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215800092' status='passed' stop='1698215800930'>
+            <name>should render the correct description text</name>
+            <title>should render the correct description text</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215800930' status='passed' stop='1698215800963'>
+            <name>should zoom out to 1.5 times the original size</name>
+            <title>should zoom out to 1.5 times the original size</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215800964' status='passed' stop='1698215801018'>
+            <name>should use safe area insets for paddingTop and marginTop</name>
+            <title>should use safe area insets for paddingTop and marginTop</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215801019' status='passed' stop='1698215801052'>
+            <name>should have the correct source for the image</name>
+            <title>should have the correct source for the image</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698215804732' stop='1698215805869'>
+    <name>Button</name>
+    <title>Button</title>
+    <test-cases>
+        <test-case start='1698215804733' status='passed' stop='1698215804881'>
+            <name>should render the button correctly with the provided children</name>
+            <title>should render the button correctly with the provided children</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215804881' status='failed' stop='1698215804910'>
+            <name>should render button with correct style</name>
+            <title>should render button with correct style</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Unable to find node on an unmounted component.</message>
+                <stack-trace>Error: Unable to find node on an unmounted component.
+                    at findCurrentFiberUsingSlowPath (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:374:17)
+                    at ReactTestInstance._currentFiber (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:12447:21)
+                    at ReactTestInstance.get (D:\insta\instatruck-driver-app\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:12507:23)
+                    at Timeout.props [as _onTimeout] (D:\insta\instatruck-driver-app\src\components\atoms\AppIcon\AppIcon.test.tsx:66:28)
+                    at listOnTimeout (node:internal/timers:569:17)
+                    at processTimers (node:internal/timers:512:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1698215804910' status='passed' stop='1698215804931'>
+            <name>should call the onPressHandler function when the button is pressed</name>
+            <title>should call the onPressHandler function when the button is pressed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215804931' status='passed' stop='1698215805014'>
+            <name>should disable the button when isDisable prop is true</name>
+            <title>should disable the button when isDisable prop is true</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215805014' status='passed' stop='1698215805869'>
+            <name>should show the loading indicator when isLoading prop is true</name>
+            <title>should show the loading indicator when isLoading prop is true</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

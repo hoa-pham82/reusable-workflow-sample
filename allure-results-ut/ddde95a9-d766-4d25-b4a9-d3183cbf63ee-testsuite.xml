@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1697188098373' stop='1697188106347'>
+    <name>Map</name>
+    <title>Map</title>
+    <test-cases>
+        <test-case start='1697188098381' status='failed' stop='1697188106339'>
+            <name>renders the component correctly</name>
+            <title>renders the component correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Unable to find an element with testID: map-view
+                
+                &lt;AIRMap /></message>
+                <stack-trace>Error: Unable to find an element with testID: map-view
+                
+                &lt;AIRMap />
+                    at Object.getByTestId (D:\insta\instatruck-driver-app\src\components\molecules\Map\Map.test.tsx:40:21)
+                    at Object.asyncJestTest (D:\insta\instatruck-driver-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:89:35)
+                    at D:\insta\instatruck-driver-app\node_modules\jest-jasmine2\build\queueRunner.js:41:12
+                    at new Promise (&lt;anonymous>)
+                    at mapper (D:\insta\instatruck-driver-app\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+                    at D:\insta\instatruck-driver-app\node_modules\jest-jasmine2\build\queueRunner.js:68:41
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

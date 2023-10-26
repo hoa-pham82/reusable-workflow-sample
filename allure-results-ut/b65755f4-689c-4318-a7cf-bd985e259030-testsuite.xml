@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1698215808370' stop='1698215809796'>
+    <name>JobHeader Component</name>
+    <title>JobHeader Component</title>
+    <test-cases>
+        <test-case start='1698215808372' status='passed' stop='1698215809710'>
+            <name>renders correctly</name>
+            <title>renders correctly</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215809710' status='passed' stop='1698215809765'>
+            <name>handles menu button click on Android</name>
+            <title>handles menu button click on Android</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1698215809766' status='passed' stop='1698215809795'>
+            <name>handles Help button click</name>
+            <title>handles Help button click</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
