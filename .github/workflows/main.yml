@@ -16,13 +16,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # - name: Get Allure history
-      #   if: success() || failure()
-      #   uses: actions/checkout@v3
-      #   continue-on-error: true
-      #   with:
-      #     ref: gh-pages
-      #     path: gh-pages
+      - name: Get Allure history
+        if: success() || failure()
+        uses: actions/checkout@v3
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Allure Report action from marketplace - Detox
         if: success() || failure()
@@ -32,6 +32,7 @@ jobs:
           allure_report: ${{ github.run_number }}-detox
           allure_history: allure-history-detox
           keep_reports: 5
+          gh_pages: gh-pages/allure-history-detox
 
       - name: Allure Report action from marketplace - UT
         if: success() || failure()
@@ -41,6 +42,7 @@ jobs:
           allure_report: ${{ github.run_number }}-ut
           allure_history: allure-history-ut
           keep_reports: 5
+          gh_pages: gh-pages/allure-history-ut
 
       - name: Display structure of downloaded files
         run: |
