@@ -16,30 +16,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: allure-results-detox
-      #     path: allure-results-detox
-      #     retention-days: 10
-
-      # - uses: actions/upload-artifact@v2
-      #   with:
-      #     name: allure-results-ut
-      #     path: allure-results-ut
-      #     retention-days: 10
-
-      # - uses: actions/download-artifact@v3
-      #   with:
-      #     name: result
-      #     path: news
-
-      # - name: Get Allure history
-      #   if: success() || failure()
-      #   uses: actions/checkout@v3
-      #   continue-on-error: true
-      #   with:
-      #     ref: gh-pages
-      #     path: gh-pages
+      - name: Get Allure history
+        if: success() || failure()
+        uses: actions/checkout@v3
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Allure Report action from marketplace - Detox
         if: success() || failure()
