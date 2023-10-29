@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Oct 24 18:49:42 GMT 2023","Tue Oct 24 18:49:50 GMT 2023","8186","","User can be assigned new job","","","","User can be assigned new job",""
+"passed","Tue Oct 24 18:49:27 GMT 2023","Tue Oct 24 18:49:42 GMT 2023","15214","","User can log in with valid credentials","","","","User can log in with valid credentials",""
+"passed","Tue Oct 24 18:49:17 GMT 2023","Tue Oct 24 18:49:27 GMT 2023","10454","","User can sign in by tapping the ""SIGN IN"" button","","","","User can sign in by tapping the ""SIGN IN"" button",""
