@@ -9,7 +9,7 @@ export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
   let passedCount = 0;
   let failedCount = 0;
 
-  const baseUrl = 'https://instatruck.github.io/instatruck-driver-app'
+  const baseUrl = 'https://hoa-pham82.github.io/reusable-workflow-sample'
   let uri;
 
   files
