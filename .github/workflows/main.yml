@@ -24,17 +24,27 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from marketplace - Detox
+      - name: Generate Allure report for Android
         if: success() || failure()
         uses: simple-elf/allure-report-action@master
         with:
           allure_results: allure-results-detox
-          allure_report: ${{ github.run_number }}-detox
-          allure_history: allure-history-detox
+          allure_report: ${{ github.run_number }}-android
+          allure_history: allure-history-android
           keep_reports: 5
-          gh_pages: gh-pages/allure-history-detox
+          gh_pages: gh-pages/allure-history-android
 
-      - name: Allure Report action from marketplace - UT
+      - name: Generate Allure report for iOS
+        if: success() || failure()
+        uses: simple-elf/allure-report-action@master
+        with:
+          allure_results: allure-results-detox
+          allure_report: ${{ github.run_number }}-ios
+          allure_history: allure-history-ios
+          keep_reports: 5
+          gh_pages: gh-pages/allure-history-ios
+
+      - name: Generate Allure report for UT
         if: success() || failure()
         uses: simple-elf/allure-report-action@master
         with:
@@ -44,18 +54,20 @@ jobs:
           keep_reports: 5
           gh_pages: gh-pages/allure-history-ut
 
-      - name: Display structure of downloaded files
+      - name: Prepare data for summary page
+        if: success() || failure()
         run: |
-          pwd && echo '------>' && ls 
-          echo '-----> you see the list of report'
+          node extractData.js ${{github.run_number}}
 
       - name: Prepare github paging
+        if: success() || failure()
         run: |
           mkdir public
-          cp -r allure-history-ut public
-          cp -r allure-history-detox public
+          cp -r allure-history-ut allure-history-android allure-history-ios public
+          cp report.json index.html script.js public
 
       - name: Deploy report to Github Pages
+        if: success() || failure()
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
