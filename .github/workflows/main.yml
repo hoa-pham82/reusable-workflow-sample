@@ -58,6 +58,7 @@ jobs:
         if: success() || failure()
         run: |
           node extractData.js ${{github.run_number}}
+          echo '---->' && cd allure-results-ut && ls && echo 'you see list json file'
 
       - name: Prepare github paging
         if: success() || failure()
