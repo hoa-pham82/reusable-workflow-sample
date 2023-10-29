@@ -4,7 +4,7 @@ import path from 'path'
 
 export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
   const files = fs.readdirSync(resultPath);
-  const totalTestRun = files.filter((file) => file.endsWith('.json')).length;
+  const totalTestRun = files.filter((file) => file.endsWith('.json') && file !== 'executor.json').length;
 
   let passedCount = 0;
   let failedCount = 0;
