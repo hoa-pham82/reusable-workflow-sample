@@ -2,38 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Report</title>
-    <style>
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-
-      th,
-      td {
-        border: 1px solid black;
-        padding: 10px;
-        text-align: center;
-      }
-
-      th {
-        background-color: #f2f2f2;
-      }
-    </style>
+    <title>Driver App Report</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <h1>Driver App Test Report</h1>
-    <table id="testTable">
-      <tr>
-        <th>Test Type</th>
-        <th>Total Test Cases</th>
-        <th>Total Passed</th>
-        <th>Total Failed</th>
-        <th>Report Link</th>
-      </tr>
-    </table>
-    <script src="script.js"></script>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+      <h1 id="heading">Driver App Summary Report</h1>
+      <div class="table__col">
+        <a
+          class="link"
+          href=""
+          id="buildUrl"
+        >
+          GitHub Actions Run 👉
+          <span class="fa fa-external-link"></span>
+        </a>
+      </div>
+
+      <div class="pie-charts">
+        <div class="pieID--micro-skills pie-chart--wrapper">
+          <h2 id="unittestHeading">Unit Test</h2>
+          
+          <div class="pie-chart">
+            <div class="pie-chart__pie"></div>
+            <ul class="pie-chart__legend">
+              <li><em>Pass✅ </em><span id="unittestPassCount">642</span></li>
+              <li><em>Fail❌</em><span id="unittestFailCount">358</span></li>
+              <li>
+                <em>Total Test Run</em><span id="unittestTotalCount">1000</span>
+              </li>
+            </ul>
+            <a class="link" href="" id="unittestLink"></a>
+          </div>
+        </div>
+        <div class="pieID--categories pie-chart--wrapper">
+          <h2 id="androidtestHeading">Android Test</h2>
+          <div class="pie-chart">
+            <div class="pie-chart__pie"></div>
+            <ul class="pie-chart__legend">
+              <li><em>Pass✅</em><span id="androidtestPassCount">768</span></li>
+              <li><em>Fail❌</em><span id="androidtestFailCount">232</span></li>
+              <li>
+                <em>Total Test Run</em
+                ><span id="androidtestTotalCount">1000</span>
+              </li>
+            </ul>
+            <a class="link" href="" id="androidtestLink"></a>
+          </div>
+        </div>
+        <div class="pieID--operations pie-chart--wrapper">
+          <h2 id="iostestHeading">iOS Test</h2>
+          <div class="pie-chart">
+            <div class="pie-chart__pie"></div>
+            <ul class="pie-chart__legend">
+              <li><em>Pass✅</em><span id="iostestPassCount">486</span></li>
+              <li><em>Fail❌</em><span id="iostestFailCount">156</span></li>
+              <li>
+                <em>Total Test Run</em><span id="iostestTotalCount">1000</span>
+              </li>
+            </ul>
+            <a class="link" href="" id="iostestLink"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://codepen.io/MaciejCaputa/pen/EmMooZ.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./loadData.js"></script>
   </body>
 </html>
