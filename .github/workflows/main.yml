@@ -23,6 +23,12 @@ jobs:
         with:
           ref: gh-pages
           path: gh-pages
+      
+      - name: Prepare data for summary page
+        if: success() || failure()
+        run: |
+          node extractData.js ${{github.run_number}} ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          echo '---->' && cd allure-results-ut && ls && echo 'you see list json file'
 
       - name: Generate Allure report for Android
         if: success() || failure()
@@ -54,11 +60,7 @@ jobs:
           keep_reports: 5
           gh_pages: gh-pages/allure-history-ut
 
-      - name: Prepare data for summary page
-        if: success() || failure()
-        run: |
-          node extractData.js ${{github.run_number}} ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          echo '---->' && cd allure-results-ut && ls && echo 'you see list json file'
+ 
 
       - name: Prepare github paging
         if: success() || failure()
