@@ -2,7 +2,7 @@
 import fs from 'fs'
 import path from 'path'
 
-export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
+export function extractData(resultPath, testType, buildNumber=process.argv[2], buildLink=process.argv[3]) {
   const files = fs.readdirSync(resultPath);
 
   const totalTestRun = files.filter((file) => file.endsWith('.json') && file !== 'executor.json').length;
@@ -11,6 +11,7 @@ export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
 
   let passedCount = 0;
   let failedCount = 0;
+  let date;
 
   const baseUrl = 'https://hoa-pham82.github.io/reusable-workflow-sample'
   let uri;
@@ -27,6 +28,12 @@ export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
       } else if (jsonData.status === 'failed') {
         failedCount++;
       }
+
+      // extract report date
+      date = new Date(jsonData.start);
+      const format = new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+      date = format;
+
     });
   
 
@@ -45,7 +52,9 @@ export function extractData(resultPath, testType, buildNumber=process.argv[2]) {
     totalTestCases: totalTestRun,
     totalPass: passedCount,
     totalFail: failedCount,
-    reportLink: `${baseUrl}/${uri}/${buildNumber}`
+    reportLink: `${baseUrl}/${uri}/${buildNumber}`,
+    reportDate: date,
+    buildUrl: buildLink
   };
 }
 
