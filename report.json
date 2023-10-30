@@ -1,0 +1,29 @@
+[
+  {
+    "testType": "Unit Test",
+    "totalTestCases": 2,
+    "totalPass": 1,
+    "totalFail": 1,
+    "reportLink": "https://hoa-pham82.github.io/reusable-workflow-sample/allure-history-ut/27",
+    "reportDate": "24 thg 10, 2023",
+    "buildUrl": "https://github.com/hoa-pham82/reusable-workflow-sample/actions/runs/6689558810"
+  },
+  {
+    "testType": "Android Test",
+    "totalTestCases": 3,
+    "totalPass": 2,
+    "totalFail": 1,
+    "reportLink": "https://hoa-pham82.github.io/reusable-workflow-sample/allure-history-android/27",
+    "reportDate": "24 thg 10, 2023",
+    "buildUrl": "https://github.com/hoa-pham82/reusable-workflow-sample/actions/runs/6689558810"
+  },
+  {
+    "testType": "iOS Test",
+    "totalTestCases": 3,
+    "totalPass": 2,
+    "totalFail": 1,
+    "reportLink": "https://hoa-pham82.github.io/reusable-workflow-sample/allure-history-ios/27",
+    "reportDate": "24 thg 10, 2023",
+    "buildUrl": "https://github.com/hoa-pham82/reusable-workflow-sample/actions/runs/6689558810"
+  }
+]
