@@ -67,7 +67,7 @@ jobs:
         run: |
           mkdir public
           cp -r allure-history-ut allure-history-android allure-history-ios public
-          cp report.json index.html script.js public
+          cp report.json index.html script.js loadData.js style.css public
 
       - name: Deploy report to Github Pages
         if: success() || failure()
