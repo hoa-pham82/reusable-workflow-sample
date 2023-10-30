@@ -31,7 +31,7 @@ export function extractData(resultPath, testType, buildNumber=process.argv[2], b
 
       // extract report date
       date = new Date(jsonData.start);
-      const format = new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+      const format = new Intl.DateTimeFormat('vi_VN', { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
       date = format;
 
     });
