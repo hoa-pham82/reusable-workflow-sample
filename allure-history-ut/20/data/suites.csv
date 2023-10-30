@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Tue Oct 24 18:49:42 GMT 2023","Tue Oct 24 18:49:50 GMT 2023","8186","","User can be assigned new job","","","","User can be assigned new job",""
-"passed","Thu Oct 26 07:01:27 GMT 2023","Thu Oct 26 07:01:27 GMT 2023","237","AbilityScreen screen","","","","","renders correctly",""

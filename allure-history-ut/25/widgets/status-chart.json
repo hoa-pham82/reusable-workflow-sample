@@ -1,0 +1,1 @@
+[{"uid":"c7cb48fe1892b49","name":"renders correctly","time":{"start":1698303687004,"stop":1698303687241,"duration":237},"status":"passed","severity":"normal"},{"uid":"c9f4d714631e2228","name":"User can be assigned new job","time":{"start":1698173382777,"stop":1698173390963,"duration":8186},"status":"failed","severity":"normal"}]
